@@ -10,12 +10,10 @@
 
 .container {
     width: 100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    /* flex-wrap: wrap; */
     align-items: center;
     justify-content: center;
-    /* padding: 0 300px; */
     color: #fff;
     background: #865DFF;
 }
@@ -111,7 +109,7 @@
     opacity: 0;
 }
 
-.my-button:hover:after {
+.my-button:hover::after {
     animation: ripple_401 1s ease-out;
 }
 
@@ -241,7 +239,7 @@ button:active {
     opacity: 0;
 }
 
-.my-button:hover:after {
+.my-button:hover::after {
     animation: ripple_401 1s ease-out;
 }
 
@@ -292,27 +290,24 @@ button:active {
     }
 }
 
+
 @media (max-width: 500px){
     .container{
         flex-direction: column;
     }
 
     .box{
-        width: 380px;
+        width: 320px;
     }
 
     .encode{
-        margin-right: 0;
         margin-bottom: 50px;
     }
 }
 
-@media (max-width: 412px){
-    .box{
-        margin: 20px 10px 10px;
-        width: 350px;
-    }
-}
+
+
+
 
 #btn-trash1 i{
     font-size: 16px;
