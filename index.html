@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/4529/4529975.png" type="image/icon type">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Message - Encoder/Decoder</title>
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box encode">
+            <h1>ENCODE</h1>
+            <hr>
+            <h2>Text</h2>
+            <input type="text" class="text" id="encode" placeholder="Text For Encode" value="">
+            <h2>Encode</h2>
+            <div class="text">
+                <p class="output" id="output1"></p>
+            </div>
+            <div class="button">
+                <button class="my-button" id="btn1">
+                    Encode
+                </button>
+                <button class="my-button" id="btn-trash1">
+                    <i class='bx bx-trash'></i>
+                </button>
+
+            </div>
+        </div>
+
+
+        <div class="box decode">
+            <h1>DECODE</h1>
+            <hr>
+            <h2>Text</h2>
+            <input type="text" class="text" id="decode" placeholder="Text For Decode" value="">
+            <h2>Decode</h2>
+            <div class="text">
+                <p class="output" id="output2"></p>
+            </div>
+            <div class="button">
+                <button class="my-button" id="btn2">
+                    Decode
+                </button>
+                <button class="my-button" id="btn-trash2">
+                    <i class='bx bx-trash'></i>
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
